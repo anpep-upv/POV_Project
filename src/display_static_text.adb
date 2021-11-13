@@ -37,6 +37,7 @@ procedure Display_Static_Text is
    begin
       for Index in 1 .. Length loop
          declare
+         -- The index of the first column where this character will be plotted
             Start_Column : Integer := 1 + (1 + Character_Stride) * (Index - 1);
          begin
             for Character_Column in 0 .. Character_Stride - 1 loop
