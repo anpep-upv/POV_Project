@@ -32,8 +32,7 @@ begin
    for Iteration in 1 .. 5 loop
       -- Declarative block for holding the input file handle.
       declare
-         File_Name : constant String :=
-           "/Volumes/HDD/pov/POV_Code/POV_Project/obj/text";
+         File_Name  : constant String := "text";
          Input_File : File_Type;
       begin
          Open (File => Input_File, Mode => In_File, Name => File_Name);
